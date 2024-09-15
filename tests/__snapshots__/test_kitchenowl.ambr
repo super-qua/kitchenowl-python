@@ -1,0 +1,251 @@
+# serializer version: 1
+# name: test_add_shoppinglist_item
+  dict({
+    'category': dict({
+      'created_at': 0,
+      'default': False,
+      'default_key': 'category_1',
+      'household_id': 1,
+      'id': 1,
+      'name': 'Category 1',
+      'ordering': 1,
+      'updated_at': 0,
+    }),
+    'category_id': 1,
+    'created_at': 0,
+    'default': False,
+    'default_key': 'item_1',
+    'description': 'Description 1',
+    'household_id': 1,
+    'icon': 'icon_1',
+    'id': 1,
+    'name': 'item_1',
+    'ordering': 1,
+    'support': 0,
+    'updated_at': 0,
+  })
+# ---
+# name: test_get_households_snapshot
+  KitchenOwlHouseholdsResponse([
+    dict({
+      'created_at': 0,
+      'default_shopping_list': dict({
+        'created_at': 0,
+        'household_id': 1,
+        'id': 1,
+        'name': 'list_1',
+        'updated_at': 0,
+      }),
+      'expenses_feature': True,
+      'id': 1,
+      'language': 'en',
+      'member': list([
+        dict({
+          'admin': True,
+          'created_at': 0,
+          'expense_balance': 0,
+          'id': 1,
+          'name': 'user 1',
+          'owner': True,
+          'photo': None,
+          'updated_at': 0,
+          'username': 'user 1',
+        }),
+      ]),
+      'name': 'household 1',
+      'photo': None,
+      'planner_feature': True,
+      'updated_at': 0,
+      'view_ordering': list([
+        'items',
+        'recipes',
+      ]),
+    }),
+  ])
+# ---
+# name: test_get_shoppinglist_items_snapshot
+  KitchenOwlShoppingListItemsResponse([
+    dict({
+      'category': dict({
+        'created_at': 0,
+        'default': False,
+        'default_key': 'category_1',
+        'household_id': 1,
+        'id': 1,
+        'name': 'Category 1',
+        'ordering': 1,
+        'updated_at': 0,
+      }),
+      'category_id': 1,
+      'created_at': 0,
+      'default': False,
+      'default_key': 'item_1',
+      'description': 'Description 1',
+      'household_id': 1,
+      'icon': 'icon_1',
+      'id': 1,
+      'name': 'item_1',
+      'ordering': 1,
+      'support': 0,
+      'updated_at': 0,
+    }),
+    dict({
+      'category': dict({
+        'created_at': 0,
+        'default': False,
+        'default_key': 'category_1',
+        'household_id': 1,
+        'id': 1,
+        'name': 'Category 1',
+        'ordering': 1,
+        'updated_at': 0,
+      }),
+      'category_id': 1,
+      'created_at': 0,
+      'default': False,
+      'default_key': 'item_1',
+      'description': 'Description 1',
+      'household_id': 1,
+      'icon': 'icon_1',
+      'id': 1,
+      'name': 'item_1',
+      'ordering': 1,
+      'support': 0,
+      'updated_at': 0,
+    }),
+  ])
+# ---
+# name: test_get_shoppinglist_suggested_items_snapshot
+  KitchenOwlShoppingListItemsResponse([
+    dict({
+      'category': dict({
+        'created_at': 0,
+        'default': False,
+        'default_key': 'category_1',
+        'household_id': 1,
+        'id': 1,
+        'name': 'Category 1',
+        'ordering': 1,
+        'updated_at': 0,
+      }),
+      'category_id': 1,
+      'created_at': 0,
+      'default': False,
+      'default_key': 'item_1',
+      'description': 'Description 1',
+      'household_id': 1,
+      'icon': 'icon_1',
+      'id': 1,
+      'name': 'item_1',
+      'ordering': 1,
+      'support': 0,
+      'updated_at': 0,
+    }),
+    dict({
+      'category': dict({
+        'created_at': 0,
+        'default': False,
+        'default_key': 'category_1',
+        'household_id': 1,
+        'id': 1,
+        'name': 'Category 1',
+        'ordering': 1,
+        'updated_at': 0,
+      }),
+      'category_id': 1,
+      'created_at': 0,
+      'default': False,
+      'default_key': 'item_1',
+      'description': 'Description 1',
+      'household_id': 1,
+      'icon': 'icon_1',
+      'id': 1,
+      'name': 'item_1',
+      'ordering': 1,
+      'support': 0,
+      'updated_at': 0,
+    }),
+  ])
+# ---
+# name: test_get_shoppinglists_snapshot
+  KitchenOwlShoppingListsResponse([
+    dict({
+      'created_at': 0,
+      'household_id': 1,
+      'id': 1,
+      'name': 'list_1',
+      'updated_at': 0,
+    }),
+    dict({
+      'created_at': 0,
+      'household_id': 1,
+      'id': 2,
+      'name': 'list_2',
+      'updated_at': 0,
+    }),
+  ])
+# ---
+# name: test_get_user_snapshot
+  dict({
+    'admin': True,
+    'created_at': 0,
+    'expense_balance': 0,
+    'id': 1,
+    'name': 'user 1',
+    'owner': True,
+    'photo': None,
+    'updated_at': 0,
+    'username': 'user 1',
+  })
+# ---
+# name: test_update_item_snapshot
+  dict({
+    'category': dict({
+      'created_at': 0,
+      'default': False,
+      'default_key': 'category_1',
+      'household_id': 1,
+      'id': 2,
+      'name': 'Category 2',
+      'ordering': 1,
+      'updated_at': 0,
+    }),
+    'category_id': 2,
+    'created_at': 0,
+    'default': False,
+    'default_key': 'item_1',
+    'household_id': 1,
+    'icon': 'icon_1',
+    'id': 1,
+    'name': 'item_1',
+    'ordering': 1,
+    'support': 0,
+    'updated_at': 0,
+  })
+# ---
+# name: test_update_shoppinglist_item_description
+  dict({
+    'category': dict({
+      'created_at': 0,
+      'default': False,
+      'default_key': 'category_1',
+      'household_id': 1,
+      'id': 1,
+      'name': 'Category 1',
+      'ordering': 1,
+      'updated_at': 0,
+    }),
+    'category_id': 1,
+    'created_at': 0,
+    'default': False,
+    'default_key': 'item_1',
+    'description': 'Description 2',
+    'household_id': 1,
+    'icon': 'icon_1',
+    'id': 1,
+    'name': 'item_1',
+    'ordering': 1,
+    'support': 0,
+    'updated_at': 0,
+  })
+# ---
